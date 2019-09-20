@@ -1,0 +1,30 @@
+.hero-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: @secondary-color; 
+    img {
+        height: 332px;
+        width: 198px;
+        padding: 10px 0px;
+    }
+    .hero-desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 1.4rem;
+        }
+        button {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            width: 100px;
+        
+            &:hover {
+                color: @white;
+                background-color: @accent-color;
+            }
+        }
+    }
+}
