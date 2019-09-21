@@ -1,0 +1,40 @@
+.contact-section {
+    background-color: @third-color;
+    padding: 20px 0px;
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.2rem;
+
+      input {
+          margin: 10px 0px;
+      }
+
+      textarea {
+          margin: 10px 0px;
+      }
+
+      #submit {
+        width: 30%;
+        margin: 10px auto;
+
+        &:hover {
+          background-color: @accent-color;
+          color: @white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

@@ -157,6 +157,10 @@ h2 {
 .navigation nav ul li {
   font-size: 1.5rem;
 }
+.navigation nav ul li a {
+  text-decoration: none;
+  color: black;
+}
 .navigation nav ul button {
   border-radius: 20px;
   width: 75px;
@@ -167,11 +171,30 @@ h2 {
   color: white;
   background-color: dodgerblue;
 }
+.footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  background-color: aliceblue;
+  font-size: 1.2rem;
+  padding: 0px 20px;
+}
+.footer ul {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: black;
+}
 .hero-box {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: darkcyan;
+  background: royalblue;
 }
 .hero-box img {
   height: 332px;
@@ -195,4 +218,58 @@ h2 {
 .hero-box .hero-desc button:hover {
   color: white;
   background-color: dodgerblue;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.features h2 {
+  margin: 20px 0px;
+}
+.features .feature {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 20px 0px;
+}
+.features .feature img {
+  width: 361px;
+  height: 236px;
+}
+.features #feature2 {
+  flex-direction: row-reverse;
+}
+.contact-section {
+  background-color: #eceaea;
+  padding: 20px 0px;
+}
+.contact-section .contact {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin: 0 auto;
+}
+.contact-section .contact h2 {
+  text-align: center;
+}
+.contact-section .contact form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+}
+.contact-section .contact form input {
+  margin: 10px 0px;
+}
+.contact-section .contact form textarea {
+  margin: 10px 0px;
+}
+.contact-section .contact form #submit {
+  width: 30%;
+  margin: 10px auto;
+}
+.contact-section .contact form #submit:hover {
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
 }
