@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <div class="navigation">
+        <div class="navigation" id="navbar">
             <img src="img/logo.png" alt="">
             <nav>
                 <ul>
@@ -21,13 +21,21 @@
                 </ul>
             </nav>
         </div>
-        <div class="about-box">
-            <h1>About LifeGPA</h1>
-            <p>LifeGPA is a habit tracking application that helps you see how well you are keeping your routines.
-               You can select what habbits to track or add your own. For every day you keep your habbit, your LifeGPA
-               will increase. You'll get a your LifeGPA report card every 30, 60, and 90 days. 
-            </p>
-        </div>
+        <section class="about-content">
+            <div class="about-box">
+                <h1>About LifeGPA</h1>
+                <p>LifeGPA is a habit tracking application that helps you see how well you are keeping your routines.
+                    You can select what habbits to track or add your own. For every day you keep your habbit, your
+                    LifeGPA
+                    will increase. You'll get a your LifeGPA report card every 30, 60, and 90 days.
+                </p>
+            </div>
+            <div class="team">
+                <h2>The Team</h2>
+                <img name="slide">
+                <a id="github"><img class="github" src="img/GitHub-Mark-64px.png" alt="GitHub Mark"></a>
+            </div>
+        </section>
         <div class="footer">
             <p>Copyright © 2019 LifeGPA</p>
             <ul>
@@ -36,6 +44,7 @@
             </ul>
         </div>
         <script src="js/index.js"></script>
+        <script src="js/about.js"></script>
 </body>
 
 </html>
