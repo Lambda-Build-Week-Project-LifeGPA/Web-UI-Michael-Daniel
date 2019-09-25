@@ -3,10 +3,21 @@
   justify-content: space-between;
   background-color: @primary-color;
 
+  @media @mobile {
+    flex-direction: column;
+  }
+
   nav {
     display: flex;
     align-items: center;
     margin-right: 100px;
+
+    @media @mobile {
+      justify-content: center;
+      margin-right: 0;
+      padding: 10px 0;
+
+    }
     ul {
       display: flex;
       justify-content: space-between;

@@ -7,21 +7,41 @@
     img {
         height: 332px;
         width: 198px;
-        padding: 10px 0px;
-        margin-top: 90px;
+        padding-top: 100px;
+        padding-bottom: 10px;
+
+        @media @mobile {
+            display: none;
+        }
     }
     .hero-desc {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin: 0 10px;
+
+        @media @tablet {
+            padding-top: 90px;
+        }
+
+        @media @mobile {
+            // margin-top: 100px;
+        }
         p {
             font-size: 1.4rem;
+            @media @mobile {
+                padding-top: 100px;
+            }
         }
         button {
             margin-top: 10px;
             font-size: 1.2rem;
             width: 100px;
+
+            @media @mobile {
+                margin-bottom: 50px;
+            }
         
             &:hover {
                 color: @white;

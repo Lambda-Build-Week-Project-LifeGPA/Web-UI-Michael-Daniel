@@ -143,10 +143,22 @@ h2 {
   justify-content: space-between;
   background-color: aliceblue;
 }
+@media (max-width: 500px) {
+  .navigation {
+    flex-direction: column;
+  }
+}
 .navigation nav {
   display: flex;
   align-items: center;
   margin-right: 100px;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    justify-content: center;
+    margin-right: 0;
+    padding: 10px 0;
+  }
 }
 .navigation nav ul {
   display: flex;
@@ -204,22 +216,45 @@ h2 {
 .hero-box img {
   height: 332px;
   width: 198px;
-  padding: 10px 0px;
-  margin-top: 90px;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .hero-box img {
+    display: none;
+  }
 }
 .hero-box .hero-desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 10px;
+}
+@media (max-width: 800px) {
+  .hero-box .hero-desc {
+    padding-top: 90px;
+  }
+}
+@media (max-width: 500px) {
 }
 .hero-box .hero-desc p {
   font-size: 1.4rem;
+}
+@media (max-width: 500px) {
+  .hero-box .hero-desc p {
+    padding-top: 100px;
+  }
 }
 .hero-box .hero-desc button {
   margin-top: 10px;
   font-size: 1.2rem;
   width: 100px;
+}
+@media (max-width: 500px) {
+  .hero-box .hero-desc button {
+    margin-bottom: 50px;
+  }
 }
 .hero-box .hero-desc button:hover {
   color: white;
@@ -239,12 +274,38 @@ h2 {
   width: 80%;
   margin: 20px 0px;
 }
+@media (max-width: 500px) {
+  .features .feature {
+    flex-direction: column;
+  }
+}
 .features .feature img {
   width: 361px;
   height: 236px;
 }
+.features .feature .feature-content {
+  margin: 0 10px;
+}
+@media (max-width: 500px) {
+  .features .feature .feature-content {
+    text-align: center;
+  }
+}
 .features #feature2 {
   flex-direction: row-reverse;
+}
+@media (max-width: 500px) {
+  .features #feature2 {
+    flex-direction: column;
+  }
+}
+.about-content {
+  margin-top: 90px;
+}
+@media (max-width: 500px) {
+  .about-content {
+    margin-top: 150px;
+  }
 }
 .about-content .about-box {
   text-align: center;
@@ -286,6 +347,11 @@ h2 {
   flex-direction: column;
   width: 33%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .contact-section .contact {
+    width: 50%;
+  }
 }
 .contact-section .contact h2 {
   text-align: center;

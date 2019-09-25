@@ -13,12 +13,28 @@
     width: 80%;
     margin: 20px 0px;
 
+    @media @mobile {
+      flex-direction: column;
+    }
+
     img {
       width: 361px;
       height: 236px;
     }
+
+    .feature-content {
+      margin: 0 10px;
+
+      @media @mobile {
+        text-align: center;
+      }
+    }
   }
   #feature2 {
     flex-direction: row-reverse;
+
+    @media @mobile {
+      flex-direction: column;
+    }
   }
 }
