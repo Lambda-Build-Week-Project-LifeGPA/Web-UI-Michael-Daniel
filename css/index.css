@@ -151,7 +151,7 @@ h2 {
 .navigation nav {
   display: flex;
   align-items: center;
-  margin-right: 100px;
+  margin-right: 10%;
 }
 @media (max-width: 500px) {
   .navigation nav {
@@ -319,24 +319,43 @@ h2 {
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
-.about-content .team {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 35px 0;
-}
-.about-content .team h2 {
+.about-content .team-title h2 {
+  text-align: center;
   margin: 20px 0;
 }
-.about-content .team img {
-  width: 740px;
-  height: 290px;
+.about-content .team {
+  display: flex;
+  justify-content: center;
+  margin: 35px auto;
+  flex-wrap: wrap;
+  width: 50%;
 }
-.about-content .team .github {
-  width: 64px;
-  height: 64px;
+.about-content .team .member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+.about-content .team .member .member-image {
+  width: 150px;
+  height: 164px;
+  border-radius: 50%;
+}
+.about-content .team .member .member-desc {
+  font-size: 1.5rem;
+  text-align: center;
   margin: 10px 0;
+}
+.about-content .team .member .member-desc h3 {
+  margin: 5px 0;
+}
+.about-content .team .member .member-desc p {
+  margin: 5px 0;
+}
+.about-content .team .member .member-desc a {
+  margin: 5px 0;
+  text-decoration: none;
+  color: blue;
 }
 .contact-section {
   background-color: #eceaea;
