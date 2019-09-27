@@ -141,6 +141,7 @@ h2 {
 .navigation {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: aliceblue;
 }
 @media (max-width: 500px) {
@@ -198,17 +199,18 @@ h2 {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 50px;
-  align-items: center;
   background-color: aliceblue;
   font-size: 1.2rem;
   padding: 0px 20px;
 }
 .footer ul {
   display: flex;
-  width: 20%;
   justify-content: space-around;
+  align-items: center;
+  width: 20%;
 }
 .footer ul li a {
   text-decoration: none;
@@ -233,9 +235,9 @@ h2 {
 }
 .hero-box .hero-desc {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 0 10px;
 }
 @media (max-width: 500px) {
@@ -244,13 +246,16 @@ h2 {
   }
 }
 .hero-box .hero-desc p {
-  font-size: 1.5rem;
+  font-size: 2.7rem;
   padding-top: 100px;
+  color: white;
 }
 .hero-box .hero-desc button {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  width: 100px;
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 200px;
+  height: 25px;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   .hero-box .hero-desc button {
@@ -272,6 +277,7 @@ h2 {
 .features .feature {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 80%;
   margin: 20px 0px;
 }
@@ -293,7 +299,7 @@ h2 {
   }
 }
 .features .feature .feature-content p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   .features .feature .feature-content {
@@ -335,14 +341,16 @@ h2 {
 .about-content .team {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 35px auto;
   flex-wrap: wrap;
   width: 50%;
 }
 .about-content .team .member {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 0 20px;
 }
 .about-content .team .member .member-image {
@@ -387,7 +395,7 @@ h2 {
 .contact-section .contact form {
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 .contact-section .contact form input {
   margin: 10px 0px;

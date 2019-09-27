@@ -8,8 +8,7 @@
   }
 
   .feature {
-    display: flex;
-    justify-content: space-around;
+    .customFlex(flex, space-around, center);
     width: 80%;
     margin: 20px 0px;
 
@@ -30,7 +29,7 @@
     }
 
       p {
-        font-size: 1.4rem;
+        font-size: @text;
       }
 
       @media @mobile {

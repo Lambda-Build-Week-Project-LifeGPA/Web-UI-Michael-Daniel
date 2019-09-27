@@ -1,6 +1,5 @@
 .navigation {
-  display: flex;
-  justify-content: space-between;
+  .customFlex(flex, space-between, center);
   background-color: @primary-color;
 
   img {
@@ -27,13 +26,11 @@
 
     }
     ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      .customFlex(flex, space-between, center);
       width: 250px;
 
       li {
-        font-size: 1.5rem;
+        font-size: @text;
 
         a {
           text-decoration: none;
@@ -41,10 +38,7 @@
         }
       }
       button {
-        border-radius: 20px;
-        width: 75px;
-        height: 30px;
-        font-size: 1.3rem;
+        .customButton(20px, 75px, 30px, 1.3rem);
 
         &:hover {
           color: @white;
